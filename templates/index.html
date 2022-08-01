@@ -1,0 +1,38 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}" />
+<div class="wrapper">
+  <div class="container">
+    <h1>Welcome</h1>
+
+    <form class="form">
+      <a href="{{ url_for('hcc1') }}">
+        <button type="button" id="hcc-button">
+          HCC fatality prediction
+        </button>
+      </a>
+      <a href="{{ url_for('covid') }}">
+        <button type="button" id="covid-button">
+          Covid prediction
+        </button>
+      </a>
+    </form>
+  </div>
+
+  <ul class="bg-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>

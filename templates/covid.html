@@ -1,0 +1,21 @@
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ url_for('static', filename='style2.css')}}"
+/>
+
+<script src="{{url_for('static', filename='script.js')}}"></script>
+
+<form
+  method="POST"
+  action="{{ url_for('covidSolve') }}"
+  enctype="multipart/form-data"
+>
+  <input type="file" name="userfile" />
+  <p>Drag your files here or click in this area.</p>
+  <button type="submit">Upload</button>
+</form>
+
+<h1 style="color: white; text-align: center">
+  <i> {{ your_res_covid }} </i>
+</h1>

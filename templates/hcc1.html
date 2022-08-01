@@ -1,0 +1,39 @@
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ url_for('static', filename='style1.css')}}"
+/>
+<div class="center">
+  <h1>Enter the Queries:</h1>
+
+  <form method="POST" action="{{ url_for('hcc1Solve') }}">
+    <div class="inputbox">
+      <input type="number" name="f1" required="required" step="any" />
+      <span>Albumin</span>
+    </div>
+    <div class="inputbox">
+      <input type="number" name="f2" required="required" step="any" />
+      <span>Haemoglobin</span>
+    </div>
+    <div class="inputbox">
+      <input type="number" name="f3" required="required" step="any" />
+      <span>Ferritin</span>
+    </div>
+    <div class="inputbox">
+      <input type="number" name="f4" required="required" step="any" />
+      <span>AFP</span>
+    </div>
+    <div class="inputbox">
+      <input type="number" name="f5" required="required" step="any" />
+      <span>Age</span>
+    </div>
+    <div class="inputbox">
+      <!---<input type="button" value="submit" />--->
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+
+  <div>
+    <h2>{{ your_res_hcc1 }}</h2>
+  </div>
+</div>
